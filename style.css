@@ -1,0 +1,111 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    height:100vh;
+}
+
+.span-col-2{
+    grid-column: span 2 / auto;
+}
+
+.span-row-2{
+    grid-row: span 2 / auto;
+    background: url(suns.svg) no-repeat;
+    background-position: 75% 25%;
+    min-width: 200px;
+}
+
+
+.top {
+    background-color: #000;
+    text-align: center;
+}
+
+.house {
+    background: url(house.svg) no-repeat;
+    min-height:175px;
+    background-position-x: 15%;
+}
+
+.footer {
+    background: #d9998e;
+    min-height:80px;
+}
+
+.content {
+    min-width: 410px;
+
+}
+
+.button-pane {
+    position: relative;
+    bottom: 70px;
+    left:48px;
+}
+
+#quotetext {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#quoteauthor {
+    font-size: 0.9em;
+    text-align: right;
+}
+
+#quoteauthor::before {
+    content: '— ';
+}
+
+html {
+    background-color: rgb(217, 153, 142);
+}
+
+body {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background-image: linear-gradient(to bottom,rgb(66, 49, 158) 14.7%,rgb(217, 59, 137) 55.8%,rgb(217, 153, 142) 70.6%);
+    padding: 0;
+    margin:0;
+    height:100vh;
+}
+
+main {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.6em;
+    margin-top:0;
+    text-transform: uppercase;
+}
+
+blockquote {
+    padding: 15px;
+    min-height: 240px;
+}
+
+button {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #42319e;
+    border: 0;
+    padding:10px;
+     
+
+}
+
+button:hover{
+    background-color: #352689;
+}
+
+button:active{
+    background-color: #42319e;
+}
+
+img {
+    width: 200px;
+}
